@@ -69,7 +69,15 @@ def my_config():
     # TODO write your own logging configuration
     #      specify a log file, threshold level, format, and append mode
     FORMAT = '%(asctime)s %(name)s %(levelname)s: %(message)s'
-    logging.basicConfig(format=FORMAT, level=logging.DEBUG, filename="logging_data.txt")
+
+    # For task NO.5
+    # logging.basicConfig(format=FORMAT, level=logging.DEBUG, filename="logging_data.txt")
+
+    # With: filemode='w', The logging output will truncate and write a new one instead.
+    # logging.basicConfig(format=FORMAT, level=logging.DEBUG, filename="logging_data_truncate.txt", filemode='w')
+
+    # With: filemode='a', Normal way like default also same like No.5 task.
+    logging.basicConfig(format=FORMAT, level=logging.DEBUG, filename="logging_data.txt", filemode='a')
 
 
 if __name__ == "__main__":

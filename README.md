@@ -49,5 +49,12 @@ In task NO.5 for second time.
 Logging doesn't overwrite but continues save logging below former.
 ```
 
+In task No.6.         
+``` 
+# With: filemode='w', The logging output will truncate and write a new one instead.
+# logging.basicConfig(format=FORMAT, level=logging.DEBUG, filename="logging_data.txt", filemode='w')
 
+# With: filemode='a', Normal way like default also same like No.5 task.
+logging.basicConfig(format=FORMAT, level=logging.DEBUG, filename="logging_data.txt", filemode='a')
+```
 
