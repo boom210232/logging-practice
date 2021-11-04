@@ -9,22 +9,37 @@ For details, see: https://docs.python.org/3/library/logging.html
 """
 import logging
 
+
 def logging_test(logger):
     """Log messages using each of the standard logging levels 
        plus 1 custom log level.
-    """ 
+    """
     # TODO write a log message that uses each of these log levels.
     #  Your log message should be an example of the sort of information 
     #  you would log at that level:
     #
+
     # debug
+    logging.debug("This program is running on dev-debug mode.")
+
     # info
+    logging.info("User 'J.Brucker' has join the server.")
+
     # warning
+    logging.warning("You're redirect to unknown website. Please turn back to menu.")
+
     # level = logging.WARN + 5 (custom log level between WARN and ERROR)
-    # error
-    # critical or fatal
     level = logging.WARN + 5  # custom log level
-    print("You forgot to write logging_test")
+    logger.log(level, "Your transaction fail to transfer dogecoin to wallet.")
+
+    # error
+    logging.error("Failed to login by user 'B.Clinton'. ")
+
+    # critical or fatal
+    logging.critical("Cannot open this file: Unknown format ")
+    logging.fatal("Anonymous user delete database data.")
+
+    # print("You forgot to write logging_test")
 
 
 def simple_config():
@@ -53,7 +68,8 @@ def my_config():
     """Write your own logging configuration."""
     # TODO write your own logging configuration
     #      specify a log file, threshold level, format, and append mode
-    pass
+    FORMAT = '%(asctime)s %(name)s %(levelname)s: %(message)s'
+    logging.basicConfig(format=FORMAT, level=logging.DEBUG, filename="logging_data.txt")
 
 
 if __name__ == "__main__":
@@ -61,7 +77,7 @@ if __name__ == "__main__":
     # TODO Configure logging using one of these choices:
 
     # 1. Call basicConfig with the default settings
-    logging.basicConfig()
+    # logging.basicConfig()
 
     # 2. Call simple_config to set the format of log messages.
     #    Comment out the above call (#1) to basicConfig for this.
@@ -70,14 +86,12 @@ if __name__ == "__main__":
     # 3. my_config() write your own logging configuration as
     #    described in the assignment. 
     #    Comment out the above calls to simple_config and basicConfig.
-    # my_config() 
+    my_config()
 
     # Log some messages to the root logger using different logging levels.
     logger = logging.getLogger()
     print("Logging to ", str(logger))
     logging_test(logger)
 
-
     # TODO create a named logger, set a a custom log threshold,
     #       and call logging_test again with your named logger.
-

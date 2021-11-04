@@ -1,0 +1,35 @@
+2021-11-04 09:45:20,522 root DEBUG: This program is running on dev-debug mode.
+2021-11-04 09:45:20,522 root INFO: User 'J.Brucker' has join the server.
+2021-11-04 09:45:20,522 root WARNING: You're redirect to unknown website. Please turn back to menu.
+2021-11-04 09:45:20,522 root Level 35: Your transaction fail to transfer dogecoin to wallet.
+2021-11-04 09:45:20,522 root ERROR: Failed to login by user 'B.Clinton'. 
+2021-11-04 09:45:20,522 root CRITICAL: Cannot open this file: Unknown format 
+2021-11-04 09:45:20,522 root CRITICAL: Anonymous user delete database data.
+2021-11-04 09:47:20,450 root DEBUG: This program is running on dev-debug mode.
+2021-11-04 09:47:20,450 root INFO: User 'J.Brucker' has join the server.
+2021-11-04 09:47:20,451 root WARNING: You're redirect to unknown website. Please turn back to menu.
+2021-11-04 09:47:20,451 root Level 35: Your transaction fail to transfer dogecoin to wallet.
+2021-11-04 09:47:20,451 root ERROR: Failed to login by user 'B.Clinton'. 
+2021-11-04 09:47:20,451 root CRITICAL: Cannot open this file: Unknown format 
+2021-11-04 09:47:20,451 root CRITICAL: Anonymous user delete database data.
+2021-11-04 09:47:37,353 root DEBUG: This program is running on dev-debug mode.
+2021-11-04 09:47:37,353 root INFO: User 'J.Brucker' has join the server.
+2021-11-04 09:47:37,353 root WARNING: You're redirect to unknown website. Please turn back to menu.
+2021-11-04 09:47:37,353 root Level 35: Your transaction fail to transfer dogecoin to wallet.
+2021-11-04 09:47:37,353 root ERROR: Failed to login by user 'B.Clinton'. 
+2021-11-04 09:47:37,353 root CRITICAL: Cannot open this file: Unknown format 
+2021-11-04 09:47:37,353 root CRITICAL: Anonymous user delete database data.
+2021-11-04 09:47:46,831 root DEBUG: This program is running on dev-debug mode.
+2021-11-04 09:47:46,831 root INFO: User 'J.Brucker' has join the server.
+2021-11-04 09:47:46,831 root WARNING: You're redirect to unknown website. Please turn back to menu.
+2021-11-04 09:47:46,831 root Level 35: Your transaction fail to transfer dogecoin to wallet.
+2021-11-04 09:47:46,832 root ERROR: Failed to login by user 'B.Clinton'. 
+2021-11-04 09:47:46,832 root CRITICAL: Cannot open this file: Unknown format 
+2021-11-04 09:47:46,832 root CRITICAL: Anonymous user delete database data.
+2021-11-04 09:47:54,404 root DEBUG: This program is running on dev-debug mode.
+2021-11-04 09:47:54,404 root INFO: User 'J.Brucker' has join the server.
+2021-11-04 09:47:54,404 root WARNING: You're redirect to unknown website. Please turn back to menu.
+2021-11-04 09:47:54,405 root Level 35: Your transaction fail to transfer dogecoin to wallet.
+2021-11-04 09:47:54,405 root ERROR: Failed to login by user 'B.Clinton'. 
+2021-11-04 09:47:54,405 root CRITICAL: Cannot open this file: Unknown format 
+2021-11-04 09:47:54,405 root CRITICAL: Anonymous user delete database data.
