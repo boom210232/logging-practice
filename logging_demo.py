@@ -89,17 +89,36 @@ if __name__ == "__main__":
 
     # 2. Call simple_config to set the format of log messages.
     #    Comment out the above call (#1) to basicConfig for this.
-    # simple_config()
+    simple_config()
 
     # 3. my_config() write your own logging configuration as
     #    described in the assignment. 
     #    Comment out the above calls to simple_config and basicConfig.
-    my_config()
+    # my_config()
 
     # Log some messages to the root logger using different logging levels.
-    logger = logging.getLogger()
-    print("Logging to ", str(logger))
-    logging_test(logger)
+
+    # logger = logging.getLogger()
+    # print("Logging to ", str(logger))
+    # logging_test(logger)
 
     # TODO create a named logger, set a a custom log threshold,
     #       and call logging_test again with your named logger.
+
+    # root logger
+
+    # logger = logging.getLogger()
+    # logger.setLevel(logging.WARN)
+    # logging_test(logger)
+
+    # logging for the 'foo' module
+
+    # mylogger = logging.getLogger("foo")
+    # mylogger.setLevel(logging.DEBUG)  # log everything
+    # logging_test(mylogger)
+
+    # logging for the 'jazz' module (my experiment)
+
+    mylogger = logging.getLogger("jazz")
+    mylogger.setLevel(logging.WARN)  # log everything
+    logging_test(mylogger)

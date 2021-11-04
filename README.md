@@ -58,3 +58,34 @@ In task No.6.
 logging.basicConfig(format=FORMAT, level=logging.DEBUG, filename="logging_data.txt", filemode='a')
 ```
 
+### Root logger and named logger.
+Root logger:
+``` 
+2021-11-04 10:03:55,600 root WARNING: You're redirect to unknown website. Please turn back to menu.
+2021-11-04 10:03:55,600 root Level 35: Your transaction fail to transfer dogecoin to wallet.
+2021-11-04 10:03:55,600 root ERROR: Failed to login by user 'B.Clinton'. 
+2021-11-04 10:03:55,600 root CRITICAL: Cannot open this file: Unknown format 
+2021-11-04 10:03:55,600 root CRITICAL: Anonymous user delete database data.
+```
+
+Named logger (In this plece called foo logger)
+``` 
+2021-11-04 10:06:20,770 root WARNING: You're redirect to unknown website. Please turn back to menu.
+2021-11-04 10:06:20,770 foo Level 35: Your transaction fail to transfer dogecoin to wallet.
+2021-11-04 10:06:20,770 root ERROR: Failed to login by user 'B.Clinton'. 
+2021-11-04 10:06:20,770 root CRITICAL: Cannot open this file: Unknown format 
+2021-11-04 10:06:20,770 root CRITICAL: Anonymous user delete database data.
+```
+
+How it different?         
+```
+On second line in foo logger will appear your module name instead root logger module.
+```
+
+From my experiment in task8.
+`mylogger.setLevel(logging.WARN)` will show the result only level from its level to higher.
+
+Reference to read more.          
+[J.Brucker's logging practice](https://cpske.github.io/ISP/logging/logging-practice)          
+[J.Brucker's Slide](https://cpske.github.io/ISP/logging/Logging.pdf)
+
